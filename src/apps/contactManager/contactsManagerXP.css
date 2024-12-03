@@ -1,0 +1,125 @@
+
+  
+  .contactsManagerXPMain {
+    width: 97.9%;
+    height: 112.4%;
+    background: linear-gradient(135deg, #d4d0c8, #ffffff);
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactsHeader {
+    background: linear-gradient(135deg, #0078d7, #4d90fe);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #3a78d1, inset 2px 2px 5px #005cb3;
+    margin-bottom: 15px;
+  }
+  
+  .contactsSearch {
+    margin-bottom: 15px;
+  }
+  
+  .searchInput {
+    width: 97.8%;
+    padding: 8px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .contactsList {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 2px solid #7a7a7a;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    margin-bottom: 15px;
+  }
+  
+  .contactCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #c4c0b8;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactName {
+    font-weight: bold;
+  }
+  
+  .contactPhone {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .deleteButton {
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+    font-weight: bold;
+  }
+  
+  .deleteButton:active {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .deleteButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .contactsAddForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .addInput {
+    padding: 8px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton {
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    color: black;
+    padding: 10px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton:active {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .noContacts {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+  }
+  

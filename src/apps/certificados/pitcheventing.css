@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+  .pitchImage {
+    margin-left: 2.25rem;
+    height: 80%;
+    width: 90%;
+  }
+
+  .pitchImagePonf {
+    height: 80%;
+    width: 100%;
+  }
+  .pitchImagePonf1 {
+    height: 80%;
+    width: 100%;
+    margin-left: 5px;
+  }
+  .picsPitch{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }

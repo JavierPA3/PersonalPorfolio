@@ -1,0 +1,166 @@
+.xpGamesApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 116.5%;
+    background: linear-gradient(to bottom, #c3d9f5, #e5eefc); /* Fondo clásico de XP */
+    font-family: Tahoma, sans-serif;
+}
+
+.menuContainer {
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d4d0c8, #ffffff);
+    border: 2px solid #7a7a7a;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    }
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menuItem {
+    font-size: 1em;
+    padding: 5px;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menuItem:hover {
+    background: linear-gradient(to bottom, #c4c0b8, #a8a8a8);
+}
+
+.backButton {
+    margin-top: 20px;
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    background: linear-gradient(to bottom, #4d90fe, #0078d7);
+    border: 2px solid #005cb3;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.backButton:hover {
+    background: linear-gradient(to bottom, #3a78d1, #005cb3);
+}
+
+.gameContainer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d4d0c8, #ffffff);
+    border: 2px solid #7a7a7a;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+}
+
+.gameButton {
+    padding: 10px 20px;
+    margin: 10px;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.gameButton:hover {
+    background: linear-gradient(to bottom, #c4c0b8, #a8a8a8);
+}
+
+.gameInput {
+    font-size: 1em;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+}
+
+/* Atrapa el botón */
+.runawayButton {
+    position: absolute;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tic Tac Toe */
+.ticTacToeBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.ticTacToeCell {
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cartas */
+.cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    font-size: 2em;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+
+/* Memoria */
+.memoryBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.memoryCard {
+    font-size: 1.5em;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.memoryCard.flipped {
+    background: linear-gradient(to bottom, #d4d0c8, #a8a8a8);
+}

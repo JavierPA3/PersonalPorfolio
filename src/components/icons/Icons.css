@@ -1,0 +1,27 @@
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 22%;
+}
+
+.iconButton:focus {
+    outline: none; 
+}
+
+.iconsPicture {
+    width: 4vh;
+    height: 4vh;
+    object-fit: cover;
+    margin-left: 0.5rem;
+}
+
+.iconsP {
+    font-size: 1rem;
+    color: white;
+    margin-top: 0.1rem; 
+}
+

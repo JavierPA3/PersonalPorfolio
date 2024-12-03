@@ -1,0 +1,29 @@
+.FoldiconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 22%;
+    padding: 15px;
+}
+
+.FoldiconButton:focus {
+    outline: none; 
+}
+
+.FoldiconsPicture {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    margin-left: 0.5rem;
+}
+
+.FoldiconsP {
+    font-size: 0.7rem;
+    color: black;
+    margin-top: 0.1rem; 
+    margin-left: 0.6rem;
+}
+

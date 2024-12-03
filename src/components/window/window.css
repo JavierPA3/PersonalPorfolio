@@ -1,0 +1,83 @@
+
+.divIconsWindows {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.windowsIcons {
+    border-radius: 3px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 1px;
+}
+
+
+
+.topWindow {
+  height: 30px;
+  background: #0078d7;
+  color: white;
+  cursor: grab;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.windowWrapper {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 5rem); /* Ajustamos la altura para que deje margen al fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  /* Contenedor que permite desplazamiento del contenido */
+  .windowContent {
+    height: calc(100% - 30px);
+    box-sizing: border-box;
+    border: #2257D6 2px solid;
+    padding-bottom: 5rem; /* Añadido espacio al final */
+  }
+  .iconButtonWindow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.topWindowIcon {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+}
+
+.topWindowIcon img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+} 
+
+.newTopWindowP {
+  font-size: 0.7rem;
+ margin: 0.5rem;
+}

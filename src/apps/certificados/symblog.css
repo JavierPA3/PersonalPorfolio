@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;  
+  }
+  
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+
+  .headerSymblog {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #000;
+    font-family: 'Irish Grover', cursive;
+    line-height: 1rem;
+}
+.subheaderSymblog{
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Irish Grover', cursive;
+    color: #F48A00;
+}
+
+.symblogBodyDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.symblogBodyDiv  p {
+    font-size: 1.15rem;
+    font-family: 'Irish Grover', cursive;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.symblogImage {
+    margin-left: 2.5rem;
+    width: 85%;
+    height: 100%;
+    border-radius: 10px;
+}
+.flexUl {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}

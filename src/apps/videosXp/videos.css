@@ -1,0 +1,98 @@
+/* src/ppx.css */
+.VideoPlayer {
+    text-align: center;
+    background-color: #e1e1e1; /* Fondo gris clásico */
+    font-family: 'Arial', sans-serif;
+    height: 116.5%;
+    overflow-y: auto;
+
+  }
+  
+  .VideoPlayer-header {
+    background-color: #005fae; /* Azul clásico de Windows XP */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .VideoPlayer-title {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .VideoPlayer-container {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .VideoPlayer-file-upload {
+    margin-bottom: 20px;
+  }
+  
+  .VideoPlayer-file-input {
+    background-color: #0078d4;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .VideoPlayer-file-input:hover {
+    background-color: #005fae;
+  }
+  
+  .VideoPlayer-video-container {
+    margin-top: 20px;
+  }
+  
+  .VideoPlayer-video {
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+  }
+  
+  .VideoPlayer-controls {
+    margin-top: 15px;
+  }
+  
+  .VideoPlayer-btn {
+    background-color: #0078d4; /* Azul botón */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .VideoPlayer-btn:hover {
+    background-color: #005fae;
+  }
+  
+  .VideoPlayer-progress-container {
+    margin-top: 10px;
+  }
+  
+  .VideoPlayer-progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .VideoPlayer-volume-container {
+    margin-top: 10px;
+  }
+  
+  .VideoPlayer-volume-slider {
+    width: 150px;
+  }
+  
+  .VideoPlayer-btn:focus {
+    outline: none;
+  }
+  

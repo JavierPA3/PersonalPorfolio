@@ -1,0 +1,106 @@
+
+  
+  .weatherMainAppContainer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 95.8%;
+    height: 108.5%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(101, 89, 75);
+    text-align: center;
+    color: white;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  /*  Header */
+  .weatherMainAppHeader {
+    margin-bottom: 20px;
+  }
+  
+  .weatherMainAppHeaderImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .weatherMainAppHeaderTitle {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .weatherMainAppInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .weatherMainAppInfoLeft {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .weatherMainAppInfoLeftTemp {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .weatherMainAppInfoLeftTime {
+    font-size: 14px;
+    color: #d4d4d4;
+  }
+  
+  .weatherMainAppInfoRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .weatherMainAppInfoRightDetail {
+    font-size: 14px;
+    color: #d4d4d4;
+    display: block;
+  }
+  
+  /* Search Bar */
+  .weatherMainAppSearchBar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .weatherMainAppSearchInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 70%;
+  }
+  
+  .weatherMainAppSearchButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0078d4;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .weatherMainAppSearchButton:hover {
+    background-color: #005bb5;
+  }
+  
+  
+  .weatherPersoImage {
+    width: 45%;
+    height: 40%;
+    margin-left: 15rem;
+    object-fit: cover;
+  }

@@ -1,0 +1,82 @@
+/* src/ppx.css */
+.PowerPointApp {
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    height: 116.5%;
+    overflow-y: auto;
+
+  }
+  
+  .PowerPointApp-header {
+    background-color: #005fae; /* Azul clásico de Windows XP */
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .PowerPointApp-title {
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  .PowerPointApp-input-container {
+    margin-top: 20px;
+  }
+  
+  .PowerPointApp-input, .PowerPointApp-button, .PowerPointApp-select, .PowerPointApp-color-picker {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .PowerPointApp-button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .PowerPointApp-button:hover {
+    background-color: #005fae;
+  }
+  
+  .PowerPointApp-font-container, .PowerPointApp-bgcolor-container {
+    margin-top: 20px;
+  }
+  
+  .PowerPointApp-select {
+    width: 200px;
+  }
+  
+  .PowerPointApp-color-picker {
+    width: 50px;
+  }
+  
+  .PowerPointApp-slides {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+  }
+  
+  .PowerPointApp-slide {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .PowerPointApp-slide input, .PowerPointApp-slide textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .PowerPointApp-slide textarea {
+    height: 100px;
+  }
+  

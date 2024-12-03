@@ -1,0 +1,18 @@
+body {
+    background: #2257D6 url(../img/1.jpg) no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.iconsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.allDivs {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr; 
+    width: 100%; 
+}
+
