@@ -1,12 +1,37 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* 
+GUÍA MANUAL DE ESTILOS: JAVIER POSTIGO ARÉVALO
 
-/* Document
-   ========================================================================== */
+PARTE 1: NORMALIZE
+PARTE 2: background.css
+PARTE 3: start.css
+PARTE 4: iconsdown.css
+PARTE 5: downbar.css
+PARTE 6: foldricons.css
+PARTE 7: Icons.css
+PARTE 8: window.css
+PARTE 9: noteblock.css
+PARTE 10: calculator.css
+PARTE 11: aboutme.css
+PARTE 12: crudOne.css
+PARTE 13: moreAboutMe.css
+PARTE 14: pitcheventing.css
+PARTE 15: symblog.css
+PARTE 16: tfg.css
+PARTE 17: clock.ss
+PARTE 18: contactManager.css
+PARTE 19: gamesFolder.css
+PARTE 20: musicPlayer.css
+PARTE 21: ppx.css
+PARTE 22: terminal.css
+PARTE 23: todoxp
+PARTE 24: videos.css
+PARTE 25: weather.css
 
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+
+
+
+
+*/
 
  html {
     line-height: 1.15; /* 1 */
@@ -347,6 +372,8 @@
   [hidden] {
     display: none;
   }
+
+  /* PARTE 2: BACKGROUND.CSS */
   body {
     background: #2257D6 url(1.jpg) no-repeat;
     font-family: Tahoma, Verdana, Arial, sans-serif;
@@ -364,6 +391,7 @@
     width: 100%; 
 }
 
+/* PARTE 5: Downbar.css */
 .barra {
     right: 0;
     position: fixed;
@@ -417,6 +445,7 @@
     outline: none;
 }
 
+/* PARTE 4: iconsdown.css */
 .iconButtonDown {
     display: grid;
     grid-template-columns: 20% 20%;
@@ -444,6 +473,7 @@
     font-family: Trebuchet;
 }
 
+/* PARTE 7: Icons.css */
 .iconButton {
     background: none;
     border: none;
@@ -471,7 +501,7 @@
     margin-top: 0.1rem; 
 }
 
-
+/* PARTE 8: window.css */
 .divIconsWindows {
     display: flex;
     flex-direction: row-reverse;
@@ -555,6 +585,7 @@
  margin: 0.5rem;
 }
 
+/* PARTE 6: foldricons.css */
 .FoldiconButton {
     background: none;
     border: none;
@@ -583,14 +614,14 @@
     margin-top: 0.1rem; 
     margin-left: 0.6rem;
 }
-
+/* PARTE 9: noteblock.css */
 .noteBlockMainApp{
-    width: 100%;
-    height: 667.2px;
-    background-color: #f5f5f5;
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    overflow-x: hidden;
+  width: 100%;
+  height: 667.2px;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .textAreaNoteBlock{
     width: 100%;
@@ -621,7 +652,7 @@
     cursor: pointer;
     outline: none;
 }
-/* Contenedor principal con estilo de ventana XP */
+/* PARTE 10: calculator.css */
 .calculatorAppMain {
     width: 300px;
     height: 380px;
@@ -708,14 +739,14 @@
   }
   .backgroundCalculator {
     background-color: wheat;
-    height: 116.5%;
+    height: 113.7%;
   }
 
   html, body {
     height: 100%;
     margin: 0;  
   }
-  
+  /* PARTE 11: aboutme.css */
   .mainPage {
     height: 108%;
     background-color: wheat;
@@ -885,7 +916,7 @@ html, body {
     margin: 0;  
     font-family: 'Roboto', sans-serif;
   }
-  
+  /* Parte 12: crudOne.css */
   .mainPage {
     height: 108%;
     background-color: wheat;
@@ -913,6 +944,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+/* Parte 13: moreAboutMe.css */
 html, body {
     height: 100%;
     margin: 0;  
@@ -929,6 +961,8 @@ html, body {
     margin-bottom: 5rem;
     overflow-y: auto; 
   }
+
+  /* PARTE 14: pitcheventing.css */
   html, body {
     height: 100%;
     margin: 0;  
@@ -968,6 +1002,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  /* PARTE 15: symblog.css */
   html, body {
     height: 100%;
     margin: 0;  
@@ -1023,7 +1058,7 @@ html, body {
   justify-content: space-around;
   list-style-type: none;
 }
-
+/* PARTE 16: tfg.css */
 html, body {
     height: 100%;
     margin: 0;  
@@ -1041,21 +1076,20 @@ html, body {
     margin-bottom: 5rem;
     overflow-y: auto; 
   }
-/* Contenedor principal */
+/* PARTE 17: clock */
 .clock {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #ffffff;
-    background: rgb(255, 255, 255);
-    border: 2px solid #285a8a;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 108%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #ffffff;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  width: 96%;
+  height: 106.8%;
+}
   
   .analog-clock {
     position: relative;
@@ -1145,10 +1179,10 @@ html, body {
     text-align: center;
   }
   
-  
+  /* PARTE 18: contactsManagerXp.css */
   .contactsManagerXPMain {
     width: 97.9%;
-    height: 112.4%;
+    height: 110.1%;
     background: linear-gradient(135deg, #d4d0c8, #ffffff);
     box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
     padding: 10px;
@@ -1268,12 +1302,13 @@ html, body {
     color: #555;
     font-style: italic;
   }
+  /* PARTE 19: gamesfolder.css */
   .xpGamesApp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 116.5%;
+    height: 113.5%;
     background: linear-gradient(to bottom, #c3d9f5, #e5eefc); /* Fondo clásico de XP */
     font-family: Tahoma, sans-serif;
 }
@@ -1434,17 +1469,18 @@ html, body {
 .memoryCard.flipped {
     background: linear-gradient(to bottom, #d4d0c8, #a8a8a8);
 }
+/* PARTE 20: musicPlayerXp.css */
 .musicPlayerXPMain {
-    width: 97.9%;
-    height: 112.4%;
-    background: linear-gradient(135deg, #d4d0c8, #ffffff);
-    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a, 3px 3px 8px rgba(0, 0, 0, 0.3);
-    font-family: Tahoma, sans-serif;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  width: 97.9%;
+  height: 110.1%;
+  background: linear-gradient(135deg, #d4d0c8, #ffffff);
+  box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a, 3px 3px 8px rgba(0, 0, 0, 0.3);
+  font-family: Tahoma, sans-serif;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
   .musicPlayerHeader {
     background: linear-gradient(135deg, #0078d7, #4d90fe);
@@ -1508,12 +1544,12 @@ html, body {
     padding: 5px;
     margin-bottom: 1
   }
-  /* src/ppx.css */
-.PowerPointApp {
+  /* PARTE 21: ppx.css */
+  .PowerPointApp {
     text-align: center;
     background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
-    height: 116.5%;
+    height: 113.6%;
     overflow-y: auto;
 
   }
@@ -1589,11 +1625,12 @@ html, body {
   .PowerPointApp-slide textarea {
     height: 100px;
   }
+  /* PARTE 22: terminal.css */
   .terminalAppMain {
     background-color: #1e1e1e;
     color: #00ff00;
     font-family: 'Courier New', Courier, monospace;
-    height: 112.5%;
+    height: 110.1%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1628,10 +1665,10 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
   }
-  /* Main Board */
-.trelloXPMain {
+  /* PARTE 23: toDoXP.css */
+  .trelloXPMain {
     width: 100%;
-    height: 116.5%;
+    height: 113.7%;
     background: linear-gradient(135deg, #d4d0c8, #ffffff);
     font-family: Tahoma, sans-serif;
     padding: 20px;
@@ -1779,12 +1816,12 @@ html, body {
     background: linear-gradient(135deg, #005cb3, #3a78d1);
     border: 1px solid #003e7e;
   }
-  /* src/ppx.css */
-.VideoPlayer {
+  /* Parte 24: videos.css */
+  .VideoPlayer {
     text-align: center;
     background-color: #e1e1e1; /* Fondo gris clásico */
     font-family: 'Arial', sans-serif;
-    height: 116.5%;
+    height: 113.5%;
     overflow-y: auto;
 
   }
@@ -1877,12 +1914,13 @@ html, body {
     outline: none;
   }
   
-  
+  /* PARTE 25: weather.css */
+    
   .weatherMainAppContainer {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     width: 95.8%;
-    height: 108.5%;
+    height: 106.8%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     background-color: rgb(101, 89, 75);
     text-align: center;
@@ -1982,6 +2020,8 @@ html, body {
     margin-left: 15rem;
     object-fit: cover;
   }
+
+  /* PARTE 3: start.css */
   .downbarStart {
     position: fixed; 
     bottom: 37px; 
