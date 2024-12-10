@@ -1,6 +1,6 @@
 body {
     background: #2257D6 url(../img/1.jpg) no-repeat center center;
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-size: cover;
     font-family: Tahoma, Verdana, Arial, sans-serif;
 }
 
@@ -16,3 +16,141 @@ body {
     width: 100%; 
 }
 
+.downbarStart {
+    position: fixed; 
+    bottom: 2.9vh; 
+    left: 0; 
+    width: 50.5vh; 
+    height: 70%; 
+    background: #fff;
+    border: 1.8px solid #0095ff; 
+    box-shadow: 2px 2px 5px rgba(253, 253, 253, 0.3); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    z-index: 1000; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+  .downbarStart.active {
+    transform: translateY(0);
+  }
+  .downbarStart {
+    transform: none;
+  }
+  
+  .startContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    height: 100%;
+  }
+  .rightStartContent {
+    width: 100%;
+    background-color: #d3e5fa;
+  }
+
+  
+ 
+  
+
+
+  .whistlerImg {
+    margin: 5px;
+    width: 15%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #e1e1e1 2px solid;
+  }
+
+  .startTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de, 
+        #3383e5, 
+        #448fea 
+    );
+    border: 1px solid #285a8a; 
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2), 
+                0px 4px 8px rgba(0, 0, 0, 0.4);
+    height: 95px; 
+    width: 50.5vh;
+
+}
+
+.startTitle span {
+    position: absolute;
+    top: 3vh;
+    left: 10vh;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px;
+    font-size: 20px;
+    font-family: Trebuchet;
+    color: rgb(255, 255, 255);
+}
+
+.startContent {
+    background-color: #d2d2d2;
+  
+}
+
+
+.startFooter {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 10px;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de 
+    );
+    height: 30px;
+    color: white;
+}
+
+.divStartFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.divStartFooterImg {
+    width: 25px;
+    height: 25px;
+    object-fit: contain; 
+}
+
+.divStartFooter span {
+    font-size: 11.5px;
+    color: white; 
+    font-family: "Trebuchet MS", sans-serif; 
+}
+.startTitleGradient {
+    border: none; /* Elimina el borde por defecto */
+    height: 4px; /* Ajusta el grosor de la línea */
+    background-image: linear-gradient(to right, rgba(11, 70, 197, 0) 10%, rgb(218, 136, 74) 50%, rgba(0, 0, 0, 0) 100%);
+    margin: 0; /* Opcional: ajusta el margen si es necesario */
+}
+.contextualMenu {
+    background-color: #fff;
+    width: 22vh;
+    
+}
+
+.contextualMenuLi {
+    margin-left: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+}

@@ -1,0 +1,28 @@
+.iconButtonPrp {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 15% 5%;
+    margin: -28px;
+    margin-right: 50px;
+}
+
+.iconButtonPrp:focus {
+    outline: none; 
+}
+
+.iconsPicturePrp {
+    
+    width: 2vh;
+    height: 2vh;
+    object-fit: cover;
+}
+
+.iconsPPrp {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-top: 0.1rem; 
+}
+

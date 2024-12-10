@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './window.css';
 import { AboutMe } from '../../apps/certificados/AboutMe.jsx';
 import { MoreAboutMe } from '../../apps/certificados/MoreAboutMe.jsx';
@@ -19,6 +19,9 @@ import { ToDoXP } from '../../apps/ToDo/ToDoXP.jsx';
 import { PowerPointApp } from '../../apps/PowerPoint/PowerPointApp.jsx';
 import { VideoPlayer } from '../../apps/videosXp/VideoPlayer.jsx';
 import { TerminalApp } from '../../apps/terminal/TerminalApp.jsx';
+import { MyComputer } from '../../apps/myequipo/MyComputer.jsx';
+import { Properties } from '../../apps/properties/Properties.jsx';
+
 const componentMap = {
   AboutMe,
   MoreAboutMe,
@@ -39,13 +42,35 @@ const componentMap = {
   ToDoXP,
   PowerPointApp,
   VideoPlayer,
+  MyComputer,
+  Properties,
 };
 
 export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
   const SelectedComponent = componentMap[app];
 
-  const [position, setPosition] = useState({ top: 5, left: 350 });
-  const [size, setSize] = useState({ width: 1000, height: 700 }); 
+  const [size, setSize] = useState({ width: 1000, height: 700 });
+
+  const [position, setPosition] = useState(() => {
+    const centerX = (window.innerWidth - size.width) / 2;
+    const centerY = (window.innerHeight - size.height) / 1000000000000000000;
+    return { top: centerY, left: centerX };
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const centerX = (window.innerWidth - size.width) / 100;
+      const centerY = (window.innerHeight - size.height) / 100;
+      setPosition({ top: centerY, left: centerX });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [size]);
+
   const [dragging, setDragging] = useState(false);
   const [resizing, setResizing] = useState(false);
   const [offset, setOffset] = useState({ x: 0, y: 0 });
@@ -80,12 +105,12 @@ export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
 
   const handleMouseUp = () => {
     setDragging(false);
-    setResizing(false); 
+    setResizing(false);
   };
 
   const handleResizeStart = (e) => {
     e.preventDefault();
-    setResizing(true); 
+    setResizing(true);
   };
 
   return (
@@ -96,21 +121,20 @@ export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
         left: position.left,
         width: size.width,
         height: size.height,
-        position: 'absolute',
-        userSelect: 'none', 
-        overflow: 'hidden', 
+        position: 'fixed',
+        userSelect: 'none',
+        overflow: 'hidden',
       }}
-      onMouseMove={handleMouseMove} 
-      onMouseUp={handleMouseUp} 
-      onMouseLeave={handleMouseUp} 
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
     >
       <div className="topWindow" onMouseDown={handleMouseDown}>
-       <div className='topWindowIcon'>
-       <img src={imageWindow} alt={nameWindow} className="newTopWindowIcon" />
-       <p className="newTopWindowP">{nameWindow}</p>
-       </div>
+        <div className="topWindowIcon">
+          <img src={imageWindow} alt={nameWindow} className="newTopWindowIcon" />
+          <p className="newTopWindowP">{nameWindow}</p>
+        </div>
         <div className="divIconsWindows">
-        
           <button className="iconButtonWindow" onClick={onClose}>
             <img src="img/Exit.png" alt="close" className="windowsIcons" />
           </button>
@@ -120,7 +144,6 @@ export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
           <button className="iconButtonWindow">
             <img src="img/Minimize.png" alt="minimize" className="windowsIcons" />
           </button>
-          
         </div>
       </div>
 
@@ -130,7 +153,7 @@ export const Window = ({ app, onClose, imageWindow, nameWindow }) => {
 
       <div
         className="resizeHandle"
-        onMouseDown={handleResizeStart} 
+        onMouseDown={handleResizeStart}
       />
     </div>
   );

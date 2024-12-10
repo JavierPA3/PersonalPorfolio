@@ -1,0 +1,112 @@
+/* Actualización de estilos para soporte de desplazamiento */
+.myComputerMainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .computerHeader {
+    background-color: #ece9d8;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menuBar {
+    display: grid;
+    grid-template-columns: 4% 5% 9% 5% 5%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .menuOption {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .ComputerAllPage {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .navigationPanel {
+    width: 20%;
+    background-color: #ece9d8;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .navigationTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .navigationList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .folderItem {
+    margin: 8px 0;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .folderItem:hover {
+    background-color: #d4d4d4;
+    border-radius: 4px;
+  }
+  
+  .contentPanel {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .mycomputerArticles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .myComputerDivfirst {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .myComputerDivfirst:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .myComputerDivfirst img {
+    max-width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .myComputerDivfirst p {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
+  }
+  

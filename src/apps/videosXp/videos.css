@@ -3,13 +3,13 @@
     text-align: center;
     background-color: #e1e1e1; /* Fondo gris clásico */
     font-family: 'Arial', sans-serif;
-    height: 116.5%;
+    height: 113.5%;
     overflow-y: auto;
 
   }
   
   .VideoPlayer-header {
-    background-color: #005fae; /* Azul clásico de Windows XP */
+    background-color: #254967;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
@@ -33,7 +33,7 @@
   }
   
   .VideoPlayer-file-input {
-    background-color: #0078d4;
+    background-color: #254967;
     color: white;
     padding: 8px 15px;
     border: none;
@@ -60,7 +60,7 @@
   }
   
   .VideoPlayer-btn {
-    background-color: #0078d4; /* Azul botón */
+    background-color: #254967; /* Azul botón */
     color: white;
     padding: 8px 15px;
     border: none;

@@ -4,7 +4,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 22%;
 }
 
@@ -13,10 +13,10 @@
 }
 
 .iconsPicture {
-    width: 4vh;
-    height: 4vh;
+    width: 3rem;
+    height: 3rem;
     object-fit: cover;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
 .iconsP {

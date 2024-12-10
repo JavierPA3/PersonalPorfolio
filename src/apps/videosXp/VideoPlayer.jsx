@@ -1,6 +1,5 @@
-// src/VideoPlayer.js
 import React, { useState, useRef, useEffect } from 'react';
-import './videos.css'; // Estilos
+import './videos.css';
 
 export const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -11,7 +10,6 @@ export const VideoPlayer = () => {
   const videoRef = useRef(null);
   const playerRef = useRef(null);
 
-  // Función para manejar el estado de reproducción y pausa
   const handlePlayPause = () => {
     if (isPlaying) {
       videoRef.current.pause();
@@ -21,7 +19,6 @@ export const VideoPlayer = () => {
     setIsPlaying(!isPlaying);
   };
 
-  // Función para manejar el silencio (mute)
   const handleMute = () => {
     setIsMuted(!isMuted);
     videoRef.current.muted = !isMuted;
@@ -76,7 +73,7 @@ export const VideoPlayer = () => {
   return (
     <div className="VideoPlayer" ref={playerRef}>
       <div className="VideoPlayer-header">
-        <h1 className="VideoPlayer-title">Reproductor de Video Estilo Windows XP</h1>
+        <h1 className="VideoPlayer-title">Reproductor de Videos</h1>
       </div>
       <div className="VideoPlayer-container">
         {/* Contenedor del video */}

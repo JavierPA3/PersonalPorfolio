@@ -4,7 +4,6 @@ html, body {
   }
   
   .mainPage {
-    height: 108%;
     background-color: wheat;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

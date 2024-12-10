@@ -1,16 +1,113 @@
-html, body {
-    height: 100%;
-    margin: 0;  
-  }
-  
-  .mainPage {
-    height: 108%;
-    background-color: wheat;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 5rem;
-    overflow-y: auto; 
-  }
+/* Contenedor principal */
+.moreAboutMe-xpApp {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 120%; /* Asegura que el contenedor ocupe el 100% del alto de la ventana */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 20px; /* Espacio adicional para evitar que el contenido quede pegado al final */
+  overflow-y: auto; 
+
+}
+
+/* Ventana con bordes */
+.moreAboutMe-xpWindow {
+  background-color: #f0f0f0;
+  width: 98%;
+  margin: 20px auto; /* Centra la ventana y agrega un margen */
+  padding: 10px;
+}
+
+/* Cabecera de la ventana */
+.moreAboutMe-xpHeader {
+  background-color: #000080;
+  color: white;
+  padding: 10px;
+}
+
+/* Título de la ventana */
+.moreAboutMe-xpTitle {
+  font-size: 24px;
+}
+
+/* Estilo de los botones */
+.moreAboutMe-button {
+  background-color: #000080;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.moreAboutMe-button:hover {
+  background-color: #4682b4;
+}
+
+/* Contenido principal */
+.moreAboutMe-xpMainContent {
+  padding-bottom: 20px; /* Para evitar que el contenido quede pegado al final */
+}
+
+/* Secciones de contenido */
+.moreAboutMe-xpSection {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.moreAboutMe-xpSectionTitle {
+  color: #000080;
+}
+
+.moreAboutMe-xpLabel {
+  font-weight: bold;
+}
+
+/* Pantalla azul de la muerte (BSOD) */
+.moreAboutMe-bsodOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moreAboutMe-bsodMessage {
+  background-color: #1e90ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.moreAboutMe-bsodTitle {
+  font-size: 32px;
+}
+
+/* Error mensaje */
+.moreAboutMe-errorMessage {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin-top: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+/* Easter egg */
+.moreAboutMe-easterEgg {
+  background-color: #ffffe0;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}

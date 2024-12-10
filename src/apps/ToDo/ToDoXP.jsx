@@ -3,9 +3,9 @@ import "./ToDoXP.css";
 
 export const ToDoXP = () => {
   const [lists, setLists] = useState([
-    { title: "To Do", cards: [] },
-    { title: "In Progress", cards: [] },
-    { title: "Done", cards: [] },
+    { title: "Por hacer", cards: [] },
+    { title: "En proceso", cards: [] },
+    { title: "Terminado", cards: [] },
   ]);
 
   const [newCardText, setNewCardText] = useState("");
@@ -80,13 +80,13 @@ export const ToDoXP = () => {
                 value={newCardText}
                 onChange={(e) => setNewCardText(e.target.value)}
                 className="trelloXPInput"
-                placeholder="New card..."
+                placeholder="..."
               />
               <button
                 onClick={() => addCard(listIndex)}
                 className="trelloXPButton"
               >
-                Add
+                +
               </button>
             </div>
           </div>

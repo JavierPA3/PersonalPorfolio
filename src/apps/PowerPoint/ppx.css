@@ -1,15 +1,14 @@
-/* src/ppx.css */
 .PowerPointApp {
     text-align: center;
     background-color: #f4f4f4;
     font-family: 'Arial', sans-serif;
-    height: 116.5%;
+    height: 113.6%;
     overflow-y: auto;
 
   }
   
   .PowerPointApp-header {
-    background-color: #005fae; /* Azul clásico de Windows XP */
+    background-color: #48a1e5;
     padding: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -31,14 +30,14 @@
   }
   
   .PowerPointApp-button {
-    background-color: #0078d4;
+    background-color: #0c5cf1;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   .PowerPointApp-button:hover {
-    background-color: #005fae;
+    background-color: #5eaff1;
   }
   
   .PowerPointApp-font-container, .PowerPointApp-bgcolor-container {

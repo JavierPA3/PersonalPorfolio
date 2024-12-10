@@ -1,6 +1,6 @@
 .musicPlayerXPMain {
     width: 97.9%;
-    height: 112.4%;
+    height: 110.1%;
     background: linear-gradient(135deg, #d4d0c8, #ffffff);
     box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a, 3px 3px 8px rgba(0, 0, 0, 0.3);
     font-family: Tahoma, sans-serif;
@@ -11,7 +11,7 @@
   }
   
   .musicPlayerHeader {
-    background: linear-gradient(135deg, #0078d7, #4d90fe);
+    background: #60101c;
     color: white;
     padding: 8px 15px;
     border-radius: 4px;
@@ -19,7 +19,6 @@
     text-align: center;
     margin-bottom: 10px;
     font-size: 1.2em;
-    box-shadow: inset -2px -2px 5px #3a78d1, inset 2px 2px 5px #005cb3;
   }
   
   .musicPlayerDisplay {
@@ -71,4 +70,4 @@
     border-radius: 4px;
     padding: 5px;
     margin-bottom: 1
-  
+  }

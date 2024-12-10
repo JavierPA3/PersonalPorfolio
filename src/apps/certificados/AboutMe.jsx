@@ -245,9 +245,9 @@ export const AboutMe = ({ closeWindow, windowImage }) => {
             <div className='contacto2'>
               <p><a href='mailto:javier.postigo.arevalo@gmail.com'><img src='img/MSN Email.png' alt='Correo Electrónico'/></a></p>
               <p><a href='tel:603 40 40 45'><img src='img/Fax.png' alt='Número de teléfono'/></a></p>
-              <p><a href='https://www.linkedin.com/in/javier-postigo-ar%C3%A9valo-14b5702b1/' ><img src='img/lkd.png' alt='Linkedin'/></a></p>
-              <p><a href='https://www.infojobs.net/candidate/cv/view/index.xhtml?codeCv=4c3d4be1-55b9-4980-93de-3353defe8763&dgv=16472794439549385952'><img src='img/file.png' alt='Infojobs'/></a></p>
-              <p><a href='https://github.com/JavierPA3'><img src='img/github.png' alt='Github'/></a></p>
+              <p><a href='https://www.linkedin.com/in/javier-postigo-ar%C3%A9valo-14b5702b1/' target='_blank'><img src='img/lkd.png' alt='Linkedin'/></a></p>
+              <p><a href='https://www.infojobs.net/candidate/cv/view/index.xhtml?codeCv=4c3d4be1-55b9-4980-93de-3353defe8763&dgv=16472794439549385952' target='_blank'><img src='img/file.png' alt='Infojobs'/></a></p>
+              <p><a href='https://github.com/JavierPA3' target='_blank'><img src='img/github.png' alt='Github'/></a></p>
             </div>
           </div>
         </article>

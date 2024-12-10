@@ -12,11 +12,11 @@ export const TerminalApp = () => {
     switch (command.toLowerCase()) {
       case '/help':
         newOutput.push(
-          'Comandos disponibles:\n/help - Muestra los comandos disponibles\n/info - Información general sobre mí\n/time - Muestra la hora actual\n/date - Muestra la fecha actual\n/hobby - Mi hobby favorito\n/stack - Mis tecnologías favoritas\n/contact - Cómo contactarme\n/joke - Cuenta un chiste\n/weather - Clima ficticio de ejemplo\n/about - Sobre esta aplicación'
+          'Comandos disponibles:\n/help - Muestra los comandos disponibles\n/info - Información general sobre mí\n/time - Muestra la hora actual\n/date - Muestra la fecha actual\n/hobby - Mi hobby favorito\n/stack - Mis tecnologías favoritas\n/contact - Cómo contactarme\n/joke - Cuenta un chiste\n/job - Mi situación laboral\n/about - Sobre esta aplicación'
         );
         break;
       case '/info':
-        newOutput.push('Soy un terminal interactivo hecho en React. Pregúntame cosas interesantes.');
+        newOutput.push('Soy Javier Postigo Arévalo, desarrollador web.');
         break;
       case '/time':
         newOutput.push(`La hora actual es: ${new Date().toLocaleTimeString()}`);
@@ -25,22 +25,22 @@ export const TerminalApp = () => {
         newOutput.push(`La fecha actual es: ${new Date().toLocaleDateString()}`);
         break;
       case '/hobby':
-        newOutput.push('Me encanta aprender cosas nuevas, especialmente sobre tecnología.');
+        newOutput.push('Adoro entre muchas cosas, programar, estudiar idiomas y jugar al fútbol.');
         break;
       case '/stack':
-        newOutput.push('Mis tecnologías favoritas incluyen JavaScript, React y Node.js.');
+        newOutput.push('Mi lenguaje favorito es php, aunque el porfolio este hecho en React.');
         break;
       case '/contact':
-        newOutput.push('Puedes contactarme a través de mi correo ficticio: example@domain.com');
+        newOutput.push('Puedes contactarme a través de mi correo eléctronico: javier.postigo.arevalo@gmail.com');
         break;
       case '/joke':
         newOutput.push('¿Por qué los programadores prefieren el lado oscuro? Porque usan "0" y "1".');
         break;
-      case '/weather':
-        newOutput.push('El clima de ejemplo es: Soleado con 25ºC.');
+      case '/job':
+        newOutput.push('Ahora mismo me encuentro desempleado, si desea contactar conmigo para cualquier trabajo, no dude en escribirme.');
         break;
       case '/about':
-        newOutput.push('Esta aplicación de terminal es un proyecto educativo hecho en React.');
+        newOutput.push('Este porfolio esta hecho en Vite React.');
         break;
       default:
         newOutput.push(
