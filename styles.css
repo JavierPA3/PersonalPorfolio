@@ -1,0 +1,2642 @@
+/* 
+GUÍA MANUAL DE ESTILOS: JAVIER POSTIGO ARÉVALO
+
+PARTE 1: NORMALIZE
+PARTE 2: background.css
+PARTE 3: start.css
+PARTE 4: iconsdown.css
+PARTE 5: downbar.css
+PARTE 6: foldricons.css
+PARTE 7: Icons.css
+PARTE 8: window.css
+PARTE 9: noteblock.css
+PARTE 10: calculator.css
+PARTE 11: aboutme.css
+PARTE 12: crudOne.css
+PARTE 13: moreAboutMe.css
+PARTE 14: pitcheventing.css
+PARTE 15: symblog.css
+PARTE 16: tfg.css
+PARTE 17: clock.ss
+PARTE 18: contactManager.css
+PARTE 19: gamesFolder.css
+PARTE 20: musicPlayer.css
+PARTE 21: ppx.css
+PARTE 22: terminal.css
+PARTE 23: todoxp
+PARTE 24: videos.css
+PARTE 25: weather.css
+PARTE 26: mycomputer.css
+
+
+
+
+
+*/
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+
+  /* PARTE 2: BACKGROUND.CSS */
+  body {
+    background: #2257D6 url(1.jpg) no-repeat center center;
+    background-size: cover;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.iconsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.allDivs {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr; 
+    width: 100%; 
+}
+
+.downbarStart {
+    position: fixed; 
+    bottom: 2.9vh; 
+    left: 0; 
+    width: 50.5vh; 
+    height: 70%; 
+    background: #fff;
+    border: 1.8px solid #0095ff; 
+    box-shadow: 2px 2px 5px rgba(253, 253, 253, 0.3); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    z-index: 1000; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+  .downbarStart.active {
+    transform: translateY(0);
+  }
+  .downbarStart {
+    transform: none;
+  }
+  
+  .startContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    height: 100%;
+  }
+  .rightStartContent {
+    width: 100%;
+    background-color: #d3e5fa;
+  }
+
+  
+ 
+  
+
+
+  .whistlerImg {
+    margin: 5px;
+    width: 15%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #e1e1e1 2px solid;
+  }
+
+  .startTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de, 
+        #3383e5, 
+        #448fea 
+    );
+    border: 1px solid #285a8a; 
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2), 
+                0px 4px 8px rgba(0, 0, 0, 0.4);
+    height: 95px; 
+    width: 50.5vh;
+
+}
+
+.startTitle span {
+    position: absolute;
+    top: 3vh;
+    left: 10vh;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px;
+    font-size: 20px;
+    font-family: Trebuchet;
+    color: rgb(255, 255, 255);
+}
+
+.startContent {
+    background-color: #d2d2d2;
+  
+}
+
+
+.startFooter {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 10px;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de 
+    );
+    height: 30px;
+    color: white;
+}
+
+.divStartFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.divStartFooterImg {
+    width: 25px;
+    height: 25px;
+    object-fit: contain; 
+}
+
+.divStartFooter span {
+    font-size: 11.5px;
+    color: white; 
+    font-family: "Trebuchet MS", sans-serif; 
+}
+.startTitleGradient {
+    border: none; /* Elimina el borde por defecto */
+    height: 4px; /* Ajusta el grosor de la línea */
+    background-image: linear-gradient(to right, rgba(11, 70, 197, 0) 10%, rgb(218, 136, 74) 50%, rgba(0, 0, 0, 0) 100%);
+    margin: 0; /* Opcional: ajusta el margen si es necesario */
+}
+.contextualMenu {
+    background-color: #fff;
+    width: 22vh;
+    
+}
+
+.contextualMenuLi {
+    margin-left: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+}
+
+/* PARTE 5: Downbar.css */
+.barra {
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2257D6 url(3.png) repeat-x 0 0;
+    background-size: 100% 100%;
+
+    height: 4vh;
+    z-index: 15; 
+
+}
+
+.logo {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 2px;
+    height: 95%;
+}
+
+.rightCorner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-top: 4px;
+    margin-right: 15px;
+    gap: 15px; 
+}
+
+.imagesCornerLogo {
+    height: 20px; 
+    margin-bottom: 0rem;
+
+}
+
+.taskBar {
+    background: transparent url(/images/taskbar_resize.png) no-repeat 0 0;
+    margin-bottom: 0.945046534vh;
+}
+
+.iconButton2 {
+    background: none; 
+    border: none; 
+    padding: 0;
+    cursor: pointer; 
+    display: flex;
+}
+
+.iconButton2:focus {
+    outline: none;
+}
+
+/* PARTE 4: iconsdown.css */
+.iconButtonDown {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.iconButtonDown:focus {
+    outline: none; 
+}
+
+.iconsPictureDown {
+    padding: 5px;
+    width: 5vh;
+    height: 3rem;
+}
+
+.iconsPDown {
+    margin-left: 1rem;
+    color: #333;
+    font-size: 2.5vh;
+    font-family: Trebuchet;
+}
+
+
+
+/* PARTE 7: Icons.css */
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 22%;
+}
+
+.iconButton:focus {
+  outline: none; 
+}
+
+.iconsPicture {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+.iconsP {
+  font-size: 1rem;
+  color: white;
+  margin-top: 0.1rem; 
+}
+
+
+
+/* PARTE 8: window.css */
+
+.divIconsWindows {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.windowsIcons {
+    border-radius: 3px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 1px;
+}
+
+
+
+.topWindow {
+  height: 30px;
+  background: #0078d7;
+  color: white;
+  cursor: grab;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.resizeHandle {
+  width: 15px;
+  height: 15px;
+  background: #2257D6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.windowWrapper {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 5rem); /* Ajustamos la altura para que deje margen al fondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  /* Contenedor que permite desplazamiento del contenido */
+  .windowContent {
+    height: calc(100% - 30px);
+    box-sizing: border-box;
+    border: #2257D6 2px solid;
+    padding-bottom: 5rem; /* Añadido espacio al final */
+  }
+  .iconButtonWindow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.topWindowIcon {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+}
+
+.topWindowIcon img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+} 
+
+.newTopWindowP {
+  font-size: 0.7rem;
+ margin: 0.5rem;
+}
+
+/* PARTE 6: foldricons.css */
+.FoldiconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 22%;
+    padding: 15px;
+}
+
+.FoldiconButton:focus {
+    outline: none; 
+}
+
+.FoldiconsPicture {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    margin-left: 0.5rem;
+}
+
+.FoldiconsP {
+    font-size: 0.7rem;
+    color: black;
+    margin-top: 0.1rem; 
+    margin-left: 0.6rem;
+}
+/* PARTE 9: noteblock.css */
+.noteBlockMainApp{
+    width: 100%;
+    height: 667.2px;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.textAreaNoteBlock{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    border: none;
+    resize: none;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    outline: none;
+}
+
+.headerNoteBlock{
+    background-color: #cfcece;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px;
+}
+
+.buttonNoteBlock {
+    background-color: #cfcece;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+/* PARTE 10: calculator.css */
+.calculatorAppMain {
+    width: 300px;
+    height: 380px;
+    margin-left: 18.5rem;
+    background: linear-gradient(135deg, #d4d0c8, #ffffff); 
+    border: 2px solid #7a7a7a; 
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a, 3px 3px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: Tahoma, sans-serif; 
+  }
+  
+  .calculatorDisplay {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    background: linear-gradient(135deg, #ffffff, #e4e4e4);
+    border: 2px solid #7a7a7a;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    border-radius: 4px;
+    color: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .calculatorButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .calculatorButton {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+    color: #000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calculatorButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .calculatorButton:active {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    transform: scale(0.98);
+  }
+  
+  .calculatorButton.special {
+    background: linear-gradient(135deg, #e75858, #a1011f);
+    color: #fff;
+  }
+  
+  
+  
+  
+  .backgroundCalculator {
+    background-color: wheat;
+    height: 113.7%;
+  }
+  /* PARTE 11: aboutme.css */
+  html, body {
+    height: 100%;
+    margin: 0;  
+  }
+  
+  .mainPage {
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+  .ulNav{
+    display: grid;
+    grid-template-columns: 10% 25% 30% 25%;
+  }
+  .mySelfPicture {
+    width: 100px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .titleArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .article {
+    margin-bottom: 20px;
+  }
+  
+  .navArticle ul, .skillsArticle ul {
+    padding: 1;
+  }
+  
+  .navArticle li, .skillsArticle li {
+    margin-bottom: 10px;
+  }
+  
+  .skillsArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+  .certificadosScroll {
+    width: 400px;              /* Ancho del contenedor */
+    overflow-x: scroll;        /* Scroll horizontal */
+    overflow-y: hidden;        /* Ocultar scroll vertical */
+    white-space: nowrap;       /* Evitar que los elementos salten de línea */
+    margin: 0 auto;            /* Centrar el contenedor en la página */
+    padding: 10px;             /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto visual */
+    border-radius: 10px;       /* Bordes redondeados */
+  }
+  
+  .certificado {
+    display: inline-block;     /* Hacer que los elementos sean en línea */
+    width: 400px;              /* Ancho de cada certificado */
+    margin-right: 15px;        /* Espaciado entre certificados */
+    vertical-align: top;       /* Alinear al inicio verticalmente */
+    background: rgb(249, 205, 123);       /* Fondo claro */
+    border-radius: 8px;        /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden;          /* Evitar que contenido extra se salga */
+  }
+  
+  .certificado img {
+    width: 100%;               /* Imagen ocupa todo el ancho del contenedor */
+    display: block;            /* Evitar espacios debajo de la imagen */
+  }
+  
+  .certificado p {
+    padding: 10px;             /* Espaciado interno del texto */
+    font-size: 16px;           /* Tamaño de letra */
+    color: #333;               /* Color del texto */
+    text-align: center;        /* Centrar el texto */
+  }
+  
+  .contacto img {
+    width: 45x;
+    height: 45px;
+    margin: 0 auto;
+  }
+
+  .contacto2 {
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+ .formation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+ } 
+ .titulo {
+  background-color: #FFDE8A;
+  padding: 12px;
+  z-index: 5px;
+ }
+ .titulo h4 {
+ }
+ .titulo p {
+  font-size: 15px;
+ }
+ .titulo span {
+  font-size: 12px;
+
+ }
+ .logoExperiencia {
+    margin-left: 2.5rem;
+    width: 92px;
+    height: 180px;
+ }
+
+ .experienciaContainer {
+  display: grid;
+  grid-template-columns: 30% 30% 40%;
+ }
+
+ .experienciaContainer h4 {
+ }
+
+ .corchete {
+  height: 10rem;
+  width: 5.4rem;
+ }
+ .titleArticle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+ }
+
+ 
+ .proyectosContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+ }
+ .descargarCv {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+ }
+  .descargarCv a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .invisibleButton {
+    background: none;
+    border: none;
+    cursor: pointer;  }
+  /* Parte 12: crudOne.css */
+  
+html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+
+.crudPictures  {
+    height: 80%;
+    width: 90%;
+}
+.liDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h3 {
+    text-align: center;
+}
+.pDivsCrud {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Parte 13: moreAboutMe.css */
+/* Contenedor principal */
+.moreAboutMe-xpApp {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 120%; /* Asegura que el contenedor ocupe el 100% del alto de la ventana */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 20px; /* Espacio adicional para evitar que el contenido quede pegado al final */
+    overflow-y: auto; 
+  
+  }
+  
+  /* Ventana con bordes */
+  .moreAboutMe-xpWindow {
+    background-color: #f0f0f0;
+    width: 98%;
+    margin: 20px auto; /* Centra la ventana y agrega un margen */
+    padding: 10px;
+  }
+  
+  /* Cabecera de la ventana */
+  .moreAboutMe-xpHeader {
+    background-color: #000080;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Título de la ventana */
+  .moreAboutMe-xpTitle {
+    font-size: 24px;
+  }
+  
+  /* Estilo de los botones */
+  .moreAboutMe-button {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border-radius: 3px;
+  }
+  
+  .moreAboutMe-button:hover {
+    background-color: #4682b4;
+  }
+  
+  /* Contenido principal */
+  .moreAboutMe-xpMainContent {
+    padding-bottom: 20px; /* Para evitar que el contenido quede pegado al final */
+  }
+  
+  /* Secciones de contenido */
+  .moreAboutMe-xpSection {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .moreAboutMe-xpSectionTitle {
+    color: #000080;
+  }
+  
+  .moreAboutMe-xpLabel {
+    font-weight: bold;
+  }
+  
+  /* Pantalla azul de la muerte (BSOD) */
+  .moreAboutMe-bsodOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .moreAboutMe-bsodMessage {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .moreAboutMe-bsodTitle {
+    font-size: 32px;
+  }
+  
+  /* Error mensaje */
+  .moreAboutMe-errorMessage {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+  
+  /* Easter egg */
+  .moreAboutMe-easterEgg {
+    background-color: #ffffe0;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+  
+  /* PARTE 14: pitcheventing.css */
+  html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+  .pitchImage {
+    margin-left: 2.25rem;
+    height: 80%;
+    width: 90%;
+  }
+
+  .pitchImagePonf {
+    height: 80%;
+    width: 100%;
+  }
+  .pitchImagePonf1 {
+    height: 80%;
+    width: 100%;
+    margin-left: 5px;
+  }
+  .picsPitch{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* PARTE 15: symblog.css */
+  html, body {
+    height: 100%;
+    margin: 0;  
+  }
+  
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+
+  .headerSymblog {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #000;
+    font-family: 'Irish Grover', cursive;
+    line-height: 1rem;
+}
+.subheaderSymblog{
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Irish Grover', cursive;
+    color: #F48A00;
+}
+
+.symblogBodyDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.symblogBodyDiv  p {
+    font-size: 1.15rem;
+    font-family: 'Irish Grover', cursive;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.symblogImage {
+    margin-left: 2.5rem;
+    width: 85%;
+    height: 100%;
+    border-radius: 10px;
+}
+.flexUl {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+/* PARTE 16: tfg.css */
+html, body {
+    height: 100%;
+    margin: 0;  
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .mainPage {
+    height: 108%;
+    background-color: wheat;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    overflow-y: auto; 
+  }
+/* PARTE 17: clock */
+/* Contenedor principal */
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #ffffff;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    width: 96%;
+    height: 106.8%;
+  }
+  
+  .analog-clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: wheat;
+    border: 5px solid #285a8a;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Esfera del reloj */
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-2px);
+  }
+  
+  /* Manecillas */
+  .hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: #285a8a;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+  }
+  
+  .hand.hour {
+    width: 35%;
+    height: 4px;
+    background: #1b4f8a;
+  }
+  
+  .hand.minute {
+    width: 45%;
+    height: 3px;
+    background: #285a8a;
+  }
+  
+  .hand.second {
+    width: 50%;
+    height: 2px;
+    background: #e53935;
+  }
+  
+  /* Marcadores de las horas */
+  .hour-mark {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background: #285a8a;
+    top: 50%;
+    left: 50%;
+    transform-origin: center bottom;
+  }
+  
+  .mark-1 { transform: translate(-50%, -50%) rotate(30deg) translateY(-90px); }
+  .mark-2 { transform: translate(-50%, -50%) rotate(60deg) translateY(-90px); }
+  .mark-3 { transform: translate(-50%, -50%) rotate(90deg) translateY(-90px); }
+  .mark-4 { transform: translate(-50%, -50%) rotate(120deg) translateY(-90px); }
+  .mark-5 { transform: translate(-50%, -50%) rotate(150deg) translateY(-90px); }
+  .mark-6 { transform: translate(-50%, -50%) rotate(180deg) translateY(-90px); }
+  .mark-7 { transform: translate(-50%, -50%) rotate(210deg) translateY(-90px); }
+  .mark-8 { transform: translate(-50%, -50%) rotate(240deg) translateY(-90px); }
+  .mark-9 { transform: translate(-50%, -50%) rotate(270deg) translateY(-90px); }
+  .mark-10 { transform: translate(-50%, -50%) rotate(300deg) translateY(-90px); }
+  .mark-11 { transform: translate(-50%, -50%) rotate(330deg) translateY(-90px); }
+  .mark-12 { transform: translate(-50%, -50%) rotate(0deg) translateY(-90px); }
+  
+  /* Reloj digital */
+  .digital-clock {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #020101;
+    font-weight: bold;
+  }
+  
+  /* Fecha */
+  .clock-date {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #010101;
+    text-align: center;
+  }
+  
+  /* PARTE 18: contactsManagerXp.css */
+  
+  
+  .contactsManagerXPMain {
+    width: 97.9%;
+    height: 110.1%;
+    background: linear-gradient(135deg, #d4d0c8, #ffffff);
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactsHeader {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .contactsSearch {
+    margin-bottom: 15px;
+  }
+  
+  .searchInput {
+    width: 97.8%;
+    padding: 8px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .contactsList {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 2px solid #7a7a7a;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    margin-bottom: 15px;
+  }
+  
+  .contactCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #c4c0b8;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactName {
+    font-weight: bold;
+  }
+  
+  .contactPhone {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .deleteButton {
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+    font-weight: bold;
+  }
+  
+  .deleteButton:active {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .deleteButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .contactsAddForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .addInput {
+    padding: 8px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton {
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    color: black;
+    padding: 10px;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton:active {
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+  }
+  
+  .addButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .noContacts {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* PARTE 19: gamesfolder.css */
+  .xpGamesApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 113.5%;
+    background: linear-gradient(to bottom, #c3d9f5, #e5eefc); /* Fondo clásico de XP */
+    font-family: Tahoma, sans-serif;
+}
+
+.menuContainer {
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d4d0c8, #ffffff);
+    border: 2px solid #7a7a7a;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    }
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menuItem {
+    font-size: 1em;
+    padding: 5px;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menuItem:hover {
+    background: linear-gradient(to bottom, #c4c0b8, #a8a8a8);
+}
+
+.backButton {
+    margin-top: 20px;
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    background: linear-gradient(to bottom, #4d90fe, #0078d7);
+    border: 2px solid #005cb3;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.backButton:hover {
+    background: linear-gradient(to bottom, #3a78d1, #005cb3);
+}
+
+.gameContainer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #d4d0c8, #ffffff);
+    border: 2px solid #7a7a7a;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+}
+
+.gameButton {
+    padding: 10px 20px;
+    margin: 10px;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 4px #ffffff, 2px 2px 4px #7a7a7a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.gameButton:hover {
+    background: linear-gradient(to bottom, #c4c0b8, #a8a8a8);
+}
+
+.gameInput {
+    font-size: 1em;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+}
+
+/* Atrapa el botón */
+.runawayButton {
+    position: absolute;
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tic Tac Toe */
+.ticTacToeBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.ticTacToeCell {
+    background: linear-gradient(to bottom, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cartas */
+.cardDeck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    font-size: 2em;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+
+/* Memoria */
+.memoryBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.memoryCard {
+    font-size: 1.5em;
+    background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+    border: 2px solid #7a7a7a;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.memoryCard.flipped {
+    background: linear-gradient(to bottom, #d4d0c8, #a8a8a8);
+}
+
+/* PARTE 20: musicPlayerXp.css */
+.musicPlayerXPMain {
+    width: 97.9%;
+    height: 110.1%;
+    background: linear-gradient(135deg, #d4d0c8, #ffffff);
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a, 3px 3px 8px rgba(0, 0, 0, 0.3);
+    font-family: Tahoma, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .musicPlayerHeader {
+    background: #60101c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .musicPlayerDisplay {
+    background: #e8e8e8;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #7a7a7a;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .songTitle {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .musicPlayerButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .xpButton {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    border: 2px solid #7a7a7a;
+    box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+    border-radius: 4px;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .xpButton:hover {
+    background: linear-gradient(135deg, #d4d0c8, #c4c0b8);
+  }
+  
+  .musicPlayerPlaylist {
+    width: 100%;
+    height: 200px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 2px solid #7a7a7a;
+    box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #7a7a7a;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 1
+  }
+  /* PARTE 21: ppx.css */
+  .PowerPointApp {
+    text-align: center;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    height: 113.6%;
+    overflow-y: auto;
+
+  }
+  
+  .PowerPointApp-header {
+    background-color: #48a1e5;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .PowerPointApp-title {
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  .PowerPointApp-input-container {
+    margin-top: 20px;
+  }
+  
+  .PowerPointApp-input, .PowerPointApp-button, .PowerPointApp-select, .PowerPointApp-color-picker {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .PowerPointApp-button {
+    background-color: #0c5cf1;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .PowerPointApp-button:hover {
+    background-color: #5eaff1;
+  }
+  
+  .PowerPointApp-font-container, .PowerPointApp-bgcolor-container {
+    margin-top: 20px;
+  }
+  
+  .PowerPointApp-select {
+    width: 200px;
+  }
+  
+  .PowerPointApp-color-picker {
+    width: 50px;
+  }
+  
+  .PowerPointApp-slides {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+  }
+  
+  .PowerPointApp-slide {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .PowerPointApp-slide input, .PowerPointApp-slide textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .PowerPointApp-slide textarea {
+    height: 100px;
+  }
+  
+  /* PARTE 22: terminal.css */
+  .terminalAppMain {
+    background-color: #1e1e1e;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    height: 110.1%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .terminalOutput {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .outputText {
+    margin: 0;
+  }
+  
+  .inputBar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputText {
+    color: #00ff00;
+    margin-right: 5px;
+  }
+  
+  .terminalInput {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+  }
+  
+  /* PARTE 23: toDoXP.css */
+  .trelloXPMain {
+    width: 100%;
+    height: 113.7%;
+    background: linear-gradient(135deg, #d4d0c8, #ffffff);
+    font-family: Tahoma, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    color: #000000;
+  }
+  
+  .trelloXPHeader {
+    background: linear-gradient(135deg, #c0f07c, #d8590a);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 4px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .trelloXPBoard {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .trelloXPList {
+    background: #ffffff;
+    border: 2px solid #7a7a7a;
+    box-shadow: inset -1px -1px 3px #ffffff, inset 1px 1px 3px #c3c3c3, -2px -2px 5px #ffffff, 2px 2px 5px #7a7a7a;
+    border-radius: 3px;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .trelloXPListTitle {
+    background: linear-gradient(135deg, #abd52c, #4d90fe);
+    color: white;
+    padding: 8px;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #005cb3;
+  }
+  
+  .trelloXPListCards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .trelloXPCard {
+    background: linear-gradient(135deg, #e8e8e8, #d4d0c8);
+    border: 1px solid #7a7a7a;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset -1px -1px 3px #ffffff, inset 1px 1px 3px #7a7a7a;
+  }
+  
+  .moveButton, .deleteButton, .trelloXPButton {
+    background: linear-gradient(135deg, #d4d0c8, #ffffff);
+    border: 1px solid #7a7a7a;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px #7a7a7a;
+    color: black;
+  }
+  
+  .moveButton:hover, .deleteButton:hover, .trelloXPButton:hover {
+    background: linear-gradient(135deg, #c4c0b8, #e3e3e3);
+    border: 1px solid #5a5a5a;
+    box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px #5a5a5a;
+  }
+  
+  .deleteButton {
+    background: linear-gradient(135deg, #ff5c5c, #d9534f);
+    border: 1px solid #a53c3c;
+    color: white;
+    box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px #7a7a7a;
+  }
+  
+  .deleteButton:hover {
+    background: linear-gradient(135deg, #d9534f, #c9302c);
+    border: 1px solid #922222;
+  }
+  
+  .trelloXPAddCard {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .trelloXPInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #7a7a7a;
+    border-radius: 2px;
+    box-shadow: inset -1px -1px 3px #ffffff, inset 1px 1px 3px #7a7a7a;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .trelloXPInput:focus {
+    outline: none;
+    border: 1px solid #005cb3;
+    box-shadow: inset -1px -1px 3px #4d90fe, inset 1px 1px 3px #003e7e;
+  }
+  
+  .trelloXPButton {
+    background: linear-gradient(135deg, #0078d7, #4d90fe);
+    color: white;
+    border: 1px solid #005cb3;
+    padding: 8px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: -1px -1px 3px #ffffff, 1px 1px 3px #003e7e;
+  }
+  
+  .trelloXPButton:hover {
+    background: linear-gradient(135deg, #005cb3, #3a78d1);
+    border: 1px solid #003e7e;
+  }
+  
+  /* Parte 24: videos.css */
+  /* src/ppx.css */
+.VideoPlayer {
+    text-align: center;
+    background-color: #e1e1e1; /* Fondo gris clásico */
+    font-family: 'Arial', sans-serif;
+    height: 113.5%;
+    overflow-y: auto;
+
+  }
+  
+  .VideoPlayer-header {
+    background-color: #254967;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .VideoPlayer-title {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .VideoPlayer-container {
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .VideoPlayer-file-upload {
+    margin-bottom: 20px;
+  }
+  
+  .VideoPlayer-file-input {
+    background-color: #254967;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .VideoPlayer-file-input:hover {
+    background-color: #005fae;
+  }
+  
+  .VideoPlayer-video-container {
+    margin-top: 20px;
+  }
+  
+  .VideoPlayer-video {
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+  }
+  
+  .VideoPlayer-controls {
+    margin-top: 15px;
+  }
+  
+  .VideoPlayer-btn {
+    background-color: #254967; /* Azul botón */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .VideoPlayer-btn:hover {
+    background-color: #005fae;
+  }
+  
+  .VideoPlayer-progress-container {
+    margin-top: 10px;
+  }
+  
+  .VideoPlayer-progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .VideoPlayer-volume-container {
+    margin-top: 10px;
+  }
+  
+  .VideoPlayer-volume-slider {
+    width: 150px;
+  }
+  
+  .VideoPlayer-btn:focus {
+    outline: none;
+  }
+  
+  /* PARTE 25: weather.css */
+   
+  
+  .weatherMainAppContainer {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 95.8%;
+    height: 106.8%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(101, 89, 75);
+    text-align: center;
+    color: white;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  /*  Header */
+  .weatherMainAppHeader {
+    margin-bottom: 20px;
+  }
+  
+  .weatherMainAppHeaderImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .weatherMainAppHeaderTitle {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .weatherMainAppInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .weatherMainAppInfoLeft {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .weatherMainAppInfoLeftTemp {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .weatherMainAppInfoLeftTime {
+    font-size: 14px;
+    color: #d4d4d4;
+  }
+  
+  .weatherMainAppInfoRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .weatherMainAppInfoRightDetail {
+    font-size: 14px;
+    color: #d4d4d4;
+    display: block;
+  }
+  
+  /* Search Bar */
+  .weatherMainAppSearchBar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .weatherMainAppSearchInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 70%;
+  }
+  
+  .weatherMainAppSearchButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: #0078d4;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .weatherMainAppSearchButton:hover {
+    background-color: #005bb5;
+  }
+  
+  
+  .weatherPersoImage {
+    width: 45%;
+    height: 40%;
+    margin-left: 15rem;
+    object-fit: cover;
+  }
+
+  /* PARTE 3: start.css */
+  .downbarStart {
+    position: fixed; ;
+    left: 0; 
+    bottom: 30px;
+    width: 50.5vh; 
+    height: 80%; 
+    background: #fff;
+    border: 1.8px solid #0095ff; 
+    box-shadow: 2px 2px 5px rgba(253, 253, 253, 0.3); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    z-index: 1000; 
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+  .downbarStart.active {
+    transform: translateY(0);
+  }
+  .downbarStart {
+    transform: none;
+  }
+  
+  .startContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    height: 100%;
+  }
+  .rightStartContent {
+    width: 100%;
+    background-color: #d3e5fa;
+  }
+
+  
+ 
+  
+
+
+  .whistlerImg {
+    margin: 5px;
+    width: 15%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #e1e1e1 2px solid;
+  }
+
+  .startTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de, 
+        #3383e5, 
+        #448fea 
+    );
+    border: 1px solid #285a8a; 
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.2), 
+                0px 4px 8px rgba(0, 0, 0, 0.4);
+    height: 95px; 
+    width: 50.5vh;
+
+}
+
+.startTitle span {
+    position: absolute;
+    top: 3vh;
+    left: 10vh;
+    text-shadow: rgba(0, 0, 0, 0.5) 2px 2px;
+    font-size: 20px;
+    font-family: Trebuchet;
+    color: rgb(255, 255, 255);
+}
+
+.startContent {
+    background-color: #d2d2d2;
+  
+}
+
+
+.startFooter {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 10px;
+    background: linear-gradient(
+        to bottom,
+        #3980d9, 
+        #1265ce, 
+        #2879de 
+    );
+    height: 30px;
+    color: white;
+}
+
+.divStartFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.divStartFooterImg {
+    width: 25px;
+    height: 25px;
+    object-fit: contain; 
+}
+
+.divStartFooter span {
+    font-size: 11.5px;
+    color: white; 
+    font-family: "Trebuchet MS", sans-serif; 
+}
+.startTitleGradient {
+    border: none; /* Elimina el borde por defecto */
+    height: 4px; /* Ajusta el grosor de la línea */
+    background-image: linear-gradient(to right, rgba(11, 70, 197, 0) 10%, rgb(218, 136, 74) 50%, rgba(0, 0, 0, 0) 100%);
+    margin: 0; /* Opcional: ajusta el margen si es necesario */
+}
+
+/* PARTE 26: MYCOMPUTER.CSS */
+/* Actualización de estilos para soporte de desplazamiento */
+.myComputerMainPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .computerHeader {
+    background-color: #ece9d8;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menuBar {
+    display: grid;
+    grid-template-columns: 4% 5% 9% 5% 5%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .menuOption {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .ComputerAllPage {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .navigationPanel {
+    width: 20%;
+    background-color: #ece9d8;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .navigationTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .navigationList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .folderItem {
+    margin: 8px 0;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .folderItem:hover {
+    background-color: #d4d4d4;
+    border-radius: 4px;
+  }
+  
+  .contentPanel {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .mycomputerArticles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+  
+  .myComputerDivfirst {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .myComputerDivfirst:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .myComputerDivfirst img {
+    max-width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .myComputerDivfirst p {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Parte 27: properties.css */
+  
+  
+  .propertiesMainPage {
+    background-color: #C0C0C0;
+    width: 96%;
+    height: 106.6%;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: black;
+    overflow-y: auto; 
+
+  }
+  
+  /* Título */
+  .propertiesTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor general */
+  .propertiesSection {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Monitor */
+  .monitorContainer {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 4rem;
+  }
+  
+  .monitorImage {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .monitorPreview {
+    position: absolute;
+    top: 14%;
+    left: 12%;
+    width: 75%;
+    height: 72%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    border: 2px solid #000;
+  }
+  
+  /* Selector de imágenes */
+  .imageSelectorProperties {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Mostrar opciones en columna */
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .imageOption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    background-color: #E0E0E0;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .imageOption:hover {
+    background-color: #D0D0D0;
+  }
+  
+  .imageThumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 1px solid #000;
+  }
+  
+  /* Botón de aplicar */
+  .applyButton {
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #000080;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .applyButton:hover {
+    background-color: #0000FF;
+  }
+  
+  .applyButton:disabled {
+    background-color: #A0A0A0;
+    cursor: not-allowed;
+  }
+  /* parte 28: iconprops.css */
+  .iconButtonPrp {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 15% 5%;
+    margin: -28px;
+    margin-right: 50px;
+}
+
+.iconButtonPrp:focus {
+    outline: none; 
+}
+
+.iconsPicturePrp {
+    
+    width: 2vh;
+    height: 2vh;
+    object-fit: cover;
+}
+
+.iconsPPrp {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-top: 0.1rem; 
+}
+
