@@ -1003,7 +1003,16 @@ font-size: 12px;
   width: 92px;
   height: 180px;
 }
-
+ .logoExperienciaCI {
+    margin-left: 1.50rem;
+    margin-top: 1rem;
+    width: 190px;
+    height: 85px;
+ }
+ .logoExperienciaVP {
+    width: 250px;
+    height: 85px;
+ }
 .experienciaContainer {
 display: grid;
 grid-template-columns: 30% 30% 40%;
